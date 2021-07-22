@@ -187,7 +187,7 @@ pub struct EthereumHeaderJson {
 	difficulty: u128,
 	seal: Vec<String>,
 	hash: String,
-	base_fee_per_gas: Option<u128>,
+	pub base_fee_per_gas: Option<u128>,
 }
 
 impl From<EthereumHeader> for EthereumHeaderJson {
